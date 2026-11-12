@@ -20,13 +20,7 @@
     <x-alert type="success" />
     <x-alert type="error" />
 
-    <div class="mb-5 max-w-sm">
-        <form method="GET">
-            <input type="text" name="search" value="{{ request('search') }}"
-                   placeholder="Cari nama atau spesialisasi..."
-                   class="w-full px-4 py-2.5 text-sm rounded-lg border border-slate-300 bg-white focus:border-[#1e3a8a] focus:ring-2 focus:ring-blue-100 outline-none transition">
-        </form>
-    </div>
+    {{-- KOTAK PENCARIAN DIHAPUS DARI SINI --}}
 
     <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
         <div class="overflow-x-auto">

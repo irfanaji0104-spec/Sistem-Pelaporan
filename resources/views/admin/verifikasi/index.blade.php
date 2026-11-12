@@ -9,11 +9,7 @@
             <h2 class="text-xl lg:text-2xl font-bold text-slate-800">Data Pengaduan Masuk</h2>
             <p class="text-sm text-slate-500 mt-1">Kelola dan verifikasi pengaduan dari siswa & guru</p>
         </div>
-        <div class="shrink-0 flex gap-2">
-            <button class="px-4 py-2 bg-green-600 text-white text-sm font-semibold rounded-lg hover:bg-green-700 transition">
-                EXPORT PDF / EXCEL
-            </button>
-        </div>
+        {{-- TOMBOL EXPORT DIHAPUS DARI SINI --}}
     </div>
 
     <x-alert type="success" />

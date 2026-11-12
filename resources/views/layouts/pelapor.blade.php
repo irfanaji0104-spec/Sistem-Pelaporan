@@ -16,17 +16,17 @@
 </head>
 <body class="font-sans antialiased bg-slate-50 text-slate-800 min-h-screen flex flex-col">
 
-    {{-- HEADER --}}
-    <header class="sticky top-0 z-10 bg-slate-900 text-white px-4 lg:px-6 py-3 flex items-center justify-between shadow-md">
-        <h1 class="font-semibold text-sm lg:text-base">Sistem Pengaduan Sarana Sekolah - Dashboard Pelapor</h1>
-        <div class="flex items-center gap-2">
+    {{-- HEADER (z-index dinaikkan jadi z-50 agar dropdown aman dari elemen di bawahnya) --}}
+    <header class="sticky top-0 z-50 bg-slate-900 text-white px-4 lg:px-6 py-3 flex items-center justify-between shadow-md">
+        <h1 class="font-semibold text-sm lg:text-base truncate mr-4">Sistem Pengaduan Sarana Sekolah - Dashboard Pelapor</h1>
+        <div class="flex items-center gap-2 shrink-0">
             <x-notification-bell />
             <x-user-dropdown />
         </div>
     </header>
 
     {{-- KONTEN --}}
-    <main class="flex-1 max-w-6xl w-full mx-auto p-4 lg:p-6">
+    <main class="flex-1 max-w-6xl w-full mx-auto p-4 lg:p-6 relative z-0">
         @yield('content')
     </main>
 
